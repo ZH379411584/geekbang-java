@@ -66,10 +66,10 @@ public class HomeWork4_2 {
             }
             System.out.println("Son Thread End");
             synchronized (object){
+                local.setObject(1L);
                 object.notifyAll();
             }
 
-            local.setObject(1L);
 
         });
         thread.start();
@@ -203,8 +203,8 @@ public class HomeWork4_2 {
                 e.printStackTrace();
             }
             System.out.println("Son Thread End");
-            countDownLatch.countDown();
             local.setObject(1L);
+            countDownLatch.countDown();
         }).start();
         countDownLatch.await();
         System.out.println("Main Thread End result:" + local.getObject());
@@ -248,8 +248,8 @@ public class HomeWork4_2 {
                 e.printStackTrace();
             }
             System.out.println("Son Thread End");
-            LockSupport.unpark(mainThread);
             local.setObject("1");
+            LockSupport.unpark(mainThread);
 
         });
         thread.start();
