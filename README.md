@@ -101,23 +101,24 @@ API 实现，有公平非公平锁，可以尝试加锁，可以中断。
 
 2.（必做）写代码实现 Spring Bean 的装配，方式越多越好（XML、Annotation 都可以）, 提交到 GitHub。
 ### Xml
-1. 屬性注入
-2. 构造器注入
+-  屬性注入
+- 构造器注入
 ### 注解
-1. @Resource
-2. @Autowired
-3. @Bean
+- @Resource
+-  @Autowired
+- @Bean
 ### java
-1. 实现ApplicationContextAware
+- 实现ApplicationContextAware
 
-3.（选做）实现一个 Spring XML 自定义配置，配置一组 Bean，例如：Student/Klass/School。
-4.（选做，会添加到高手附加题）
-4.1 （挑战）讲网关的 frontend/backend/filter/router 线程池都改造成 Spring 配置方式；
-4.2 （挑战）基于 AOP 改造 Netty 网关，filter 和 router 使用 AOP 方式实现；
-4.3 （中级挑战）基于前述改造，将网关请求前后端分离，中级使用 JMS 传递消息；
-4.4 （中级挑战）尝试使用 ByteBuddy 实现一个简单的基于类的 AOP；
-4.5 （超级挑战）尝试使用 ByteBuddy 与 Instrument 实现一个简单 JavaAgent 实现无侵入下的 AOP。
-5.（选做）总结一下，单例的各种写法，比较它们的优劣。
+
+3.（选做）实现一个 Spring XML 自定义配置，配置一组 Bean，例如：Student/Klass/School。  
+4.（选做，会添加到高手附加题）  
+4.1 （挑战）讲网关的 frontend/backend/filter/router 线程池都改造成 Spring 配置方式；  
+4.2 （挑战）基于 AOP 改造 Netty 网关，filter 和 router 使用 AOP 方式实现；  
+4.3 （中级挑战）基于前述改造，将网关请求前后端分离，中级使用 JMS 传递消息；  
+4.4 （中级挑战）尝试使用 ByteBuddy 实现一个简单的基于类的 AOP；  
+4.5 （超级挑战）尝试使用 ByteBuddy 与 Instrument 实现一个简单 JavaAgent 实现无侵入下的 AOP。  
+5.（选做）总结一下，单例的各种写法，比较它们的优劣。  
 
 6.（选做）maven/spring 的 profile 机制，都有什么用法？
 
@@ -125,16 +126,15 @@ API 实现，有公平非公平锁，可以尝试加锁，可以中断。
 
 8.（必做）给前面课程提供的 Student/Klass/School 实现自动配置和 Starter。
 
-[boot](./homework5_spring/src/main/java/com/study/spring/boot)
-[StudentAppTest](./homework5_spring/src/test/java/com/study/spring/boot/StudentAppTest.java)
+[boot配置目录](./homework5_spring/src/main/java/com/study/spring/boot) 
+   
+[StudentAppTest](./homework5_spring/src/test/java/com/study/spring/boot/StudentAppTest.java)    
 
 9.（选做）学习 MyBatis-generator 的用法和原理，学会自定义 TypeHandler 处理复杂类型。
 
 10.（必做）研究一下 JDBC 接口和数据库连接池，掌握它们的设计和用法：
-1）使用 JDBC 原生接口，实现数据库的增删改查操作。
-
-2）使用事务，PrepareStatement 方式，批处理方式，改进上述操作。
+1. 使用 JDBC 原生接口，实现数据库的增删改查操作。
+2. 使用事务，PrepareStatement 方式，批处理方式，改进上述操作。  
 [JdbcTest](./homework5_spring/src/test/java/com/study/spring/jdbc/JdbcTest.java)
-3）配置 Hikari 连接池，改进上述操作。提交代码到 GitHub。
-
+3. 配置 Hikari 连接池，改进上述操作。提交代码到 GitHub。     
 [HikariTest](./homework5_spring/src/test/java/com/study/spring/jdbc/HikariTest.java)
