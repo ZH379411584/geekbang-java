@@ -2,8 +2,6 @@ package com.study.homework7.config;
 
 import com.study.homework7.datasource.DataSourceConstant;
 import com.study.homework7.datasource.MultiDataSource;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,7 +15,7 @@ import java.util.Map;
  * @author hong.zheng
  * @Date: 11/7/21 10:14 PM
  **/
-@Configuration
+//@Configuration
 public class DatasourceConfig {
 
     @Bean
