@@ -16,10 +16,14 @@
 8.（选做）配置一遍异步复制，半同步复制、组复制
 
 9.（必做）读写分离 - 动态切换数据源版本 1.0
+[代码](./homowork7_db/src/test/java/com/study/homework7)  
 
 10.（必做）读写分离 - 数据库框架版本 2.0
 
-[代码](./homowork7_db/src/test/java/com/study/homework7)  
+在homework7分支上
+```
+git checkout homework7
+```
 
 11.（选做）读写分离 - 数据库中间件版本 3.0
 
