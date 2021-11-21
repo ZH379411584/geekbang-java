@@ -12,10 +12,10 @@
         <module>homework3</module>
         <module>homework4</module>
         <module>homework5_spring</module>
-        <module>homework6_db
-        </module>
+        <module>homework6_db</module>
         <module>homowork7_db</module>
         <module>homework8_distribute_transaction</module>
+        <module>homework9_rpc</module>
     </modules>
 
 
