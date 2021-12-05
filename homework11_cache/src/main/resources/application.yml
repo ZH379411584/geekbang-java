@@ -1,0 +1,44 @@
+
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    database: 1
+    host: 127.0.0.1
+    password:
+    port: 6379
+    timeout: 3000
+    jedis:
+      pool:
+        max-idle: 500
+        min-idle: 50
+        max-active: 2000
+        max-wait: 1000
+    testOnBorrow: true
+##  cache:
+##    type: redis
+#  redis:
+#    host: localhost
+#    lettuce:
+#      pool:
+#        max-active: 16
+#        max-wait: 10ms
+
+#    type: ehcache
+#    ehcache:
+#      config: ehcache.xml
+
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.study.cache.model
+
+logging:
+  level:
+    io:
+      kimmking:
+        cache : info
