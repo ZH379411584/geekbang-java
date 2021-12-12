@@ -17,6 +17,7 @@
         <module>homework8_distribute_transaction</module>
         <module>homework9_rpc</module>
         <module>homework11_cache</module>
+        <module>homework12_mq</module>
     </modules>
 
 
